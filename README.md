@@ -5,7 +5,7 @@ I worked through Iridesium's "Create a Black Hole in Blender" [tutorial](https:/
 
 > I would really recommend doing some compositing when you're done. Compositing is really important and you should get good at it just because it can really take your image to the next level.
 
-I haven't been using Blender long and haven't paid much attention to details like the _View Transform_ (typically _Filmic_) or applying any transformations to my final render in the _Compositing_ workspace. But here, a trivial amount of work in the _Compositing_ workspace makes all the difference. Just compare the results here:
+I haven't been using Blender long and haven't paid much attention to details like the _View Transform_ (typically _Filmic_) or applying any transformations to my final render in the _Compositing_ workspace. But here, a trivial amount of work in the _Compositing_ workspace makes all the difference. Just compare these results:
 
 ### Original render
 
@@ -26,7 +26,7 @@ But let's leave the "why" aside for the moment and look at how simple it is to a
 Compositing
 -----------
 
-Here's my [`black-hole.blend`](https://github.com/george-hawkins/black-hole/raw/master/blend-files/black-hole.blend), open it (or your own version of the black hole) in Blender and then go to _Compositing_ workspace and tick _Use Nodes_. You should see something like this:
+Here's my [`black-hole.blend`](https://github.com/george-hawkins/black-hole/raw/master/blend-files/black-hole.blend) (created with Blender 3.0). Open it (or your own version of the black hole) in Blender and then go to _Compositing_ workspace and tick _Use Nodes_. You should see something like this:
 
 ![use nodes](images/use-nodes.png)
 
@@ -52,7 +52,7 @@ Bizarrely, despite Blender having the underlying render layer result and being a
 
 There is a way around this (see below) but it feels like things should be much simpler - the obvious thing would be to be able to disable re-rendering in the _Rendering Layers_ node. If you like this idea, you can vote for it [here](https://blender.community/c/rightclickselect/4nfbbc).
 
-Using the color balance node
+Using the Color Balance node
 ----------------------------
 
 I used the _Gamma_ node above because it's a super quick way to get a much more interesting result. With the black hole, there's no such thing as "realistic" colors, all we're interested in is getting an appealing result. However, after some reading, I get the impression that the _Color Balance_ node with its _Correction Formula_ set to _Offset/Power/Slope_ should be your go-to node for this kind of thing, especially when realism and proper control of the color are more important to you. However, unlike _Gamma_, there isn't one magic number that improves everything - you have to learn what the _Basis_ field and the _Offset_, _Power_ and _Slope_ color pickers do. This isn't something one can explain in one or two simple sentences.
@@ -122,6 +122,6 @@ If you want to see my `.blend` file for the above, you can find it here in [`bla
 Conclusions
 -----------
 
-Thank you very much if you've read this far. I hope you found some of the above useful. If you've got any suggestions or corrections then create an [issue](https://github.com/george-hawkins/black-hole/issues). I'd love to hear from you but I apologize in advance if you don't hear back from me - I've got very little free time at the moment.
+Thank you very much if you've read this far. I hope you found some of the above useful (if you did then maybe star the repo to feed my vanity). If you've got any suggestions or corrections then create an [issue](https://github.com/george-hawkins/black-hole/issues). I'd love to hear from you but I apologize in advance if you don't hear back from me - I've got very little free time at the moment.
 
 I'm really sorry but if you've got questions about any aspect of this then please ask them on the [Blender StackExchange](https://blender.stackexchange.com/) or on [Blender Artists](https://blenderartists.org/) as I'm simply not in a position, time-wise, to help you out. And I am just a Blender beginner too.
